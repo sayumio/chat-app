@@ -10,6 +10,7 @@ RSpec.describe "メッセージ投稿機能", type: :system do
     it '送る値が空の為、メッセージの送信に失敗すること' do
       # サインインする
       sign_in(@room_user.user)
+
       # 作成されたチャットルームへ遷移する
       click_on(@room_user.room.name)
 
